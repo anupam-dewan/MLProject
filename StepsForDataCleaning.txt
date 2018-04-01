@@ -1,6 +1,7 @@
 DATA CLEANING
 1) Replace -unknown- values with NaNs - Adding other and unknown in gender to other.
 2) Age values are uncleaned - added value nan for people with age<10 or greater than 100. Calculated the age if the year is given.
+-Removed the nans(we dont need data for age<10 or reater than 100)
 3) Remove dimensions that are redundant(be careful to not remove a feature if there isnt any good reason behind  as that is data loss)
 4) Increase the cardinality by splitting date_account_created and timestamp_first_active
 into day, is_weekday, month, year
@@ -8,5 +9,4 @@ into day, is_weekday, month, year
 6) OHE for categorical variables
 7) Extract information from dates
 8) Session dataset is less than the user dataset- so need to decide how to merge and also do we need session dataset at all? We anyway don’t have it for all users.
-9)  
-
+9) 
